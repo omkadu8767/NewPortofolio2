@@ -1,4 +1,4 @@
-To access this Project, Click on this Link:- https://omkadu8767.github.io/NewPortofolio2/
+To access this Project, Click on this Link:- https://new-portofolio2.vercel.app/
 
 
 # 💫 About Me:
