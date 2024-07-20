@@ -1,106 +1,100 @@
-html{
+html {
     background-color: silver;
     word-spacing: 2px;
     text-transform: capitalize;
-    
 }
-#underline{
+
+#underline {
     color: red;
 }
-.point{
+
+.point {
     color: blue;
 }
 
-
-#head{
+#head {
     text-align: center;
     font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-    text-decoration-line:underline;
+    text-decoration-line: underline;
 }
-#sub{
+
+#sub {
     text-align: center;
     font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
-    }
- #text{
-        font-weight: bold;
-        word-spacing: 2px;
-        margin-left: 20px;
-        font-size: 25px;
-    }
-#img1{
-    height: 407px;
-    width: 677px;
-    margin-left: 340px;
-}
-#kerf{
-    height: 407px;
-    width: 677px;
-    margin-left: 340px;
-}
-.flex1{
-    display: flex;
-    flex-direction: row;
-    height: 380px;
-    width: 50px;
-    margin-left: 20px;
-}
-.flex2{
-    display: flex;
-    flex-direction: row;
-    height: 380px;
-    width: 50px;
-    margin-left: 10px;
-    padding: 10px;
 }
 
-.flex3{
+#text {
+    font-weight: bold;
+    word-spacing: 2px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+.group{
     display: flex;
-    flex-direction: row;
-    height: 300px;
-    width: 10px;
-    /* padding: 10px; */
+    height: 50%;
+    width: 50%;
+    
 }
-.flex4{
+
+.flex {
     display: flex;
-    flex-direction: row;
-    height: 300px;
-    width: 10px;
-    margin-left: 100px;
-    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
 }
-.flex5{
-    display: flex;
-    flex-direction: row;
-    height: 300px;
-    width: 10px;
-    margin-left: 100px;
-    padding: 10px;
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
-.flex6{
-    display: flex;
-    flex-direction: row;
-    height: 300px;
-    width: 10px;
-    margin-left: 100px;
-    padding: 10px;
+
+#img1 {
+    height: auto;
+    width: 100%;
+    max-width: 677px;
 }
-#img1{
-    height: 500px;
-    width: 800px;
-    margin-left: 285px;
-}
-#footer{
+
+#footer {
     text-align: center;
-    font: size 10px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:red ;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
     text-shadow: 1px 1px black;
 }
-#copyright{
+
+#copyright {
     color: silver;
 }
 
+@media (max-width: 768px) {
+    #head {
+        font-size: 36px;
+    }
+
+    #sub {
+        font-size: 24px;
+    }
+
+    #text {
+        font-size: 18px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    #img1,
+    #imgFinal {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

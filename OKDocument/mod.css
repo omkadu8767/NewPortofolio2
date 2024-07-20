@@ -1,89 +1,92 @@
-html{
+html {
     background-color: aqua;
     word-spacing: 2px;
-    
 }
-#head{
+
+#head {
     text-align: center;
-    font-size: 50px;
+    font-size: 3rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-    text-decoration-line:underline;
+    text-decoration-line: underline;
+    text-shadow: 1px 1px;
 }
-#sub{
+
+#sub {
     text-align: center;
-    font-size: 30px;
+    font-size: 1.5rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
-    }
-    #text{
-        font-weight: bold;
-        word-spacing: 2px;
-        margin-left: 40px;
-        font-size: 25px;
-    }
-    #img{
-        height: 400px;
-        width: auto;
-        margin-left: 300px;
-        
-    }
-    #img2{
-        height: 400px;
-        width: auto;
-        margin-left: 300px;
-    }
-    #img3{
-        height: 400px;
-        width: auto;
-        margin-left: 300px;
-    }
-    #img4{
-        height: 400px;
-        width: auto;
-        margin-left: 300px;
-        }
+    text-shadow: 1px 1px red;
+}
 
-    #img5{
-        height: 400px;
-            width: auto;
-            margin-left: 300px;
-            
-        }
-        #img6{
-            height: 400px;
-                width: auto;
-                margin-left: 350px;
-                
-            }
-        .flex{
-            display: flex;
-            height: 380px;
-                width: 50px;
-                margin-left: 0px;
+#text {
+    font-weight: bold;
+    word-spacing: 2px;
+    margin-left: 20px;
+    font-size: 1.25rem;
+}
 
-            }
-            .flex2{
-                display: flex;
-                height: 380px;
-                    width: 50px;
-                    margin-left: 0px;
-    
-                }
-#footer{
+img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.flex,
+.flex2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#footer {
     text-align: center;
-    font: size 10px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:red ;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
     text-shadow: 1px 1px black;
 }
-#copyright{
+
+#copyright {
     color: aqua;
+    text-align: center;
 }
-h6:hover{
+
+h6:hover {
     text-decoration-color: yellow;
 }
 
-    
-        
-    
+/* Responsive Styles */
+@media (min-width: 600px) {
+    #text {
+        margin-left: 40px;
+        font-size: 1.5rem;
+    }
+
+    img {
+        max-width: 600px;
+        margin: 20px auto;
+    }
+
+    .flex,
+    .flex2 {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 900px) {
+    #text {
+        margin-left: 60px;
+        font-size: 2rem;
+    }
+
+    img {
+        max-width: 800px;
+    }
+
+    .flex,
+    .flex2 {
+        justify-content: space-between;
+    }
+}
